@@ -1,0 +1,56 @@
+a{
+
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    left: 5%;
+    
+}
+
+
+
+a:empty{
+
+    top: 10%;
+    left: 10%;
+    -webkit-transform: translate(10%, 10%);
+    -moz-transform: translate(10%, 10%);
+    -ms-transform: translate(10%, 10%);
+    -o-transform: translate(10%, 10%);
+    transform: translate(10%, 10%);
+}
+
+@media screen and (orientation: portrait) {
+  a{
+      max-width: 90%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  a{
+      max-height: 90%;
+  }
+
+  body{
+
+    background-color: #fbfaf8;
+
+  }
+
+ 
+ a.rollover{
+  display: block;
+  width: 1440px;
+  height: 810px;
+  text-decoration: none;
+  background-image: url("../img/alert.png");
+  }
+
+a.rollover:hover{
+  background-position: -1920px 0;
+  }
+
+.displace{
+  position: absolute;
+  left: -5000px;
+  }
